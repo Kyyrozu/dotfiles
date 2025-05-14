@@ -159,8 +159,8 @@
         "escape": true
     },
     "hyprland/window": {
-        //"format": "{}"   // <--- these is the default value  
-        "format": "<span  weight='bold' >{class}</span>",
+        // "format": "{}",   // <--- these is the default value  
+        // "format": "<span  weight='bold' >{class}</span>",
         "max-length": 120,
         "icon": false,
         "icon-size": 13
@@ -179,14 +179,10 @@
         "format": "{icon}",
         "format-icons": {
             "default": "",
-            "active": "",
+            "active": ""
             //"default": "○",
             //"default": "●"
         }
-    },
-    "custom/script": {
-        "on-click": "~/.config/waybar/volume.sh toggle",
-        "format": "",
     },
     "custom/cliphist": {
         "format": "{}",
@@ -207,52 +203,6 @@
         "on-click-middle": "sleep 0.1 && quickapps.sh kitty firefox spotify code dolphin",
         "interval": 86400,
         "tooltip": true
-    },
-    "custom/theme": {
-        "format": "{}",
-        "rotate": 0,
-        "exec": "echo ; echo 󰟡 pick color",
-        "on-click": "hyprpicker",
-        "on-click-right": "themeswitch.sh -p",
-        "on-click-middle": "sleep 0.1 && themeselect.sh",
-        "interval": 86400, // once every day
-        "tooltip": true
-    },
-    "custom/wallchange": {
-        "format": "{}",
-        "rotate": 0,
-        "exec": "echo ; echo 󰆊 switch wallpaper",
-        "on-click": "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/anik/Downloads/skyway.jpg",
-        "on-click-right": "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/anik/Downloads/cloud.png",
-        "on-click-middle": "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/anik/Downloads/gradient.jpg",
-        "on-scroll-up": "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/anik/Downloads/torvalds.png",
-        "on-scroll-down": "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/anik/Downloads/night.png",
-        "interval": 86400, // once every day
-        "tooltip": true
-    },
-    "custom/mouse": {
-        "format": "",
-        "format-alt": "",
-        "on-click": "m8mouse -dpi 1 -led 2 -speed 4",
-        "on-click-right": "m8mouse -dpi 1 -led 4 -speed 4",
-        "on-click-middle": "m8mouse -dpi 1 -led 7 -speed 4",
-        "tooltip": true
-    },
-    "wlr/taskbar": {
-        "format": "{icon}",
-        "rotate": 0,
-        "icon-size": 18,
-        "icon-theme": "Tela-circle-dracula",
-        "spacing": 0,
-        "tooltip-format": "{title}",
-        "on-click": "activate",
-        "on-click-middle": "close",
-        "ignore-list": [
-            "Alacritty"
-        ],
-        "app_ids-mapping": {
-            "firefoxdeveloperedition": "firefox-developer-edition"
-        }
     },
     "custom/spotify": {
         "exec": "mediaplayer.py --player spotify",

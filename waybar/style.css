@@ -19,12 +19,13 @@ window#waybar {
 
 
 tooltip {
-    background: #171717;
+    background: #A1BDCE;
     color: #A1BDCE;
     font-size: 13px;
     border-radius: 7px;
     border: 2px solid #101a24;
 }
+
 #workspaces{
 background: rgba(23, 23, 23, 0.0);
     color: #888789;
@@ -55,42 +56,7 @@ background: rgba(23, 23, 23, 0.0);
 
 #workspaces button:hover {
     background: none;
-    color: #b972d7;
-}
-
-
-#taskbar button {
-    box-shadow: none;
-	text-shadow: none;
-	font-size: 4px;
-    padding: 0px;
-    border-radius: 9px;
-    margin-bottom: 3px;
-    margin-left: 0px;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin-right: 0px;
-    color: @wb-color;
-    animation: tb_normal 20s ease-in-out 1;
-}
-
-#taskbar button.active {
-    background: @wb-act-bg;
-    color: @wb-act-color;
-    margin-left: 3px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 3px;
-    animation: tb_active 20s ease-in-out 1;
-    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
-    min-height: 9px; 
-}
-
-#taskbar button:hover {
-    background: @wb-hvr-bg;
-    color: @wb-hvr-color;
-    animation: tb_hover 20s ease-in-out 1;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    color: #4a79b2;
 }
 
 #tray menu * {
@@ -106,18 +72,12 @@ background: rgba(23, 23, 23, 0.0);
 
 
 #custom-spacer{
-opacity: 0.0;
+    opacity: 0.0;
 }
 #custom-smallspacer{
-opacity: 0.0;
+    opacity: 0.0;
 }
 
-
-#custom-mouse{
-font-size: 14px;
-margin-bottom: 6px;
-background:  #161320;
-}
 
 
 #custom-power{
@@ -127,18 +87,18 @@ background:  #161320;
     margin: 6px 0px 6px 0px;
     padding-left: 4px;
     padding-right: 4px;
-    }
+}
 
 #backlight{
-    color: #2096C0;
+    color: #A1BDCE;
     background: rgba(23, 23, 23, 0.0);
     font-weight: normal;
     font-size: 19px;
     margin: 1px 0px 0px 0px;
     padding-left: 0px;
     padding-right: 2px;
- 
-}
+ }
+
 #bluetooth,
 #custom-cliphist{
     color: #E6E7E7;
@@ -147,29 +107,27 @@ background:  #161320;
     margin: 4px 0px 4px 0px;
     padding-left: 4px;
     padding-right: 4px;
- 
 }
+
 #battery{
     font-weight: normal;
     font-size: 22px;
-    color: #a6d189;
+    color: #A1BDCE;
     background:  rgba(23, 23, 23, 0.0);
     opacity: 1;
     margin: 0px 0px 0px 0px;
     padding-left: 0px;
     padding-right: 0px;
- 
 }
 
 #idle_inhibitor{
-color: #24966e;
-background: @bar-bg;
+    color: #24966e;
     opacity: 1;
     margin: 4px 0px 4px 0px;
     padding-left: 4px;
     padding-right: 4px;
-
 }
+
 #clock{
     color: #A1BDCE;
     font-size: 15px;
@@ -181,12 +139,12 @@ background: @bar-bg;
     padding-left: 10px;
     padding-right: 10px;
     border: none;
-    
 }
+
 #pulseaudio{
 font-weight: normal;
 font-size: 18px;
-color: #6F8FDB;
+color: #A1BDCE;
     background:  rgba(22, 19, 32, 0.0);
     opacity: 1;
     margin: 0px 0px 0px 0px;
