@@ -4,8 +4,8 @@
     "layer": "top",
     "position": "top",
     "mod": "dock",
-    "margin-left": 5,
-    "margin-right": 5,
+    "margin-left": 3,
+    "margin-right": 3,
     "margin-top": 0,
     "margin-bottom": 0,
     "exclusive": true,
@@ -159,7 +159,7 @@
         "escape": true
     },
     "hyprland/window": {
-        // "format": "{}",   // <--- these is the default value  
+        // "format": "{}",   // <--- this is the default value  
         // "format": "<span  weight='bold' >{class}</span>",
         "max-length": 120,
         "icon": false,
@@ -278,6 +278,7 @@
         //  "format-icons": [<i class='fa-solid fa-wifi-slash'></i>],
     },
     "backlight": {
+        "tooltip": false,
         "device": "intel_backlight",
         "rotate": 0,
         "format": "{icon}",
@@ -434,7 +435,7 @@
         "max": 100,
         "rotate": 0,
         "device": "intel_backlight",
-        "scroll-step": 1,
+        "scroll-step": 1
     },
     "pulseaudio/slider": {
         "min": 5,
