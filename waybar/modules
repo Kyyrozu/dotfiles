@@ -212,7 +212,7 @@
     "tooltip-format-connected": "{device_enumerate}",
     "tooltip-format-enumerate-connected": " {device_alias} 󰂄{device_battery_percentage}%",
     "tooltip": true,
-    "on-click": "blueman-manager",
+    "on-click": "blueman-manager"
 },
      
 "clock": {
@@ -361,7 +361,8 @@
     "tooltip-format-ethernet": "{ifname} 󰌘",
     "tooltip-format-disconnected": "󰌙 Disconnected",
     "max-length": 50,
-    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "on-click": "nm-connection-editor"
 },
   
 "network#speed": {
