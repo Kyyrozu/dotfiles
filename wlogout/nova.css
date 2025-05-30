@@ -29,7 +29,7 @@ button:focus {
     box-shadow: none;
     background-size : 20%;
     border-color: @color5;
-    border-width: 3px;
+    border-width: 2px;
 }
 
 button:hover {
