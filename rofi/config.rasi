@@ -17,16 +17,16 @@ window {
     anchor:                     center;
     border:                     2px;
     border-radius:              30px;
+    border-color:               @border-color;
+    width:                      30%;
 
-    width:                      55%;
+    background-color:           black / 75%;
 }
 
 /* Main Box ---------------------------------------- */
 mainbox {
-    children:                   ["img", "listbox"];
-    orientation:                horizontal;
+    children:                   ["listbox"];
     background-color:           transparent;
-
     spacing:                    24px;
 }
 
@@ -40,12 +40,12 @@ listbox {
 
 /* Listview ---------------------------------------- */
 listview {
-    columns:                     2;
-    lines:                       6;
+    columns:                     1;
+    lines:                       3;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
-    layout:                      vertical;
+    layout:                      horizontal;
     reverse:                     false;
     fixed-height:                true;
     fixed-columns:               true;
@@ -54,16 +54,9 @@ listview {
     background-color:            transparent;
 }
 
-/* Image ----------------------------------------------- */
-img {
-    padding:                    64px 128px;
-    border-radius:              24px;
-    background-image:           url("~/.current_wallpaper", height);
-}
-
 /* Inputbar --------------------------------------------- */
 inputbar {
-    children:                    [ "textbox-icon", "entry" ];
+    children:                    ["textbox-icon", "entry"];
 
     border-radius:               12px;
     background-color:            @shade-bg;
@@ -98,6 +91,12 @@ element {
     background-color:           transparent;
     border-radius:              10px;
     padding:                    12px;
+}
+element selected.normal {
+    background-color:            @shade-bg;
+    text-color:                  white;
+    border:                      1px solid;
+    border-color:                @border-color;
 }
 
 element-text {
