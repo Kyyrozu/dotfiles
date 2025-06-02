@@ -93,7 +93,7 @@ element {
     padding:                    12px;
 }
 element selected.normal {
-    background-color:            @shade-bg;
+    background-color:            transparent;
     text-color:                  white;
     border:                      1px solid;
     border-color:                @border-color;
