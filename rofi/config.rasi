@@ -20,7 +20,7 @@ window {
     border-color:               @border-color;
     width:                      30%;
 
-    background-color:           black / 75%;
+    background-color:           black / 85%;
 }
 
 /* Main Box ---------------------------------------- */
